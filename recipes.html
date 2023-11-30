@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes</title>
+    <link rel="stylesheet" href="recipe.css">
+
+    <script src="main.js"></script>
+        
+</head>
+<body>
+    <!-- This will be our header section -->
+    <header class="content">
+        <nav>
+            <ul>
+                <li><a href="w13index.html">Home</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="recipe_details.html">Recipe Details</a></li>
+            </ul>
+        </nav>
+
+        <h1>View all of the recipes</h1>
+    </header>
+
+    <main>
+        <table>
+            <tr>
+                <td>Salad Recipe</td>
+                <td>This is a yummy salad</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <a onclick="toggleDetails('recipe1', 'link1')" id="link1">...show details...</a>
+                    <div id="recipe1" style="display: none;">
+                    This salad uses lettuce, tomatoes, croutons and marshmallows
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Burger Recipe</td>
+                <td>This is a yummy burger</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <a onclick="toggleDetails('recipe2', 'link2')" id="link2">...show details...</a>
+                    <div id="recipe2" style="display: none;">
+                    This burger uses a burger, bun, lettuce, tomatoes, and marshmallows
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Cereal Recipe</td>
+                <td>This is a yummy cereal</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <a onclick="toggleDetails('recipe3', 'link3')" id="link3">...show details...</a>
+                    <div id="recipe3" style="display: none;">
+                    This cereal has croutons and marshmallows
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Ice Cream Recipe</td>
+                <td>This is a yummy ice cream</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <a onclick="toggleDetails('recipe4', 'link4')" id="link4">...show details...</a>
+                    <div id="recipe4" style="display: none;">
+                    This ice cream milk, cream, sugar and marshmallows
+                    </div>
+                </td>
+            </tr>
+
+        
+        </table>
+    </main>
+</body>
+</html>

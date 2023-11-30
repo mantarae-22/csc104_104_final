@@ -1,0 +1,123 @@
+body{
+    background-color:rgb(124, 104, 84);
+    margin: 0;
+    padding: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: whitesmoke;
+    background-image: url('images/bg.jpg');
+    background-size: auto;
+    background-position: center;
+}
+
+h1{
+    color: rgb(201, 196, 196);
+}
+
+img.recipe{
+    width: 400px;
+}
+
+/* These are our menu styles */
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li{
+    float: left;
+}
+
+li a {
+    display: block;
+    color:rgb(243, 224, 224);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover{
+    background-color:rgb(43, 40, 38);
+}
+
+/* This is the parent div */
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+/* This is child div */
+.column{
+    flex: 1;
+    background-color:rgb(201, 196, 196);
+    padding: 20px;
+    border: 1px solid black;
+    box-shadow: 0px 2px 4px rgb(43, 40, 38);
+    text-align: center;
+    color: rgb(44, 34, 34);
+}
+
+.column + .column{
+    margin-left: 20px;
+}
+
+@media (max-width: 600px){
+    .flex-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .column + .column{
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
+
+/* Main header styles */
+.content{
+    background-color:rgba(73, 12, 25, .75);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    text-align: center;
+}
+
+/* Table styles */
+table{
+    border-collapse: collapse;
+    width: 50%;
+    border: 1px solid black;
+    /* CSS shorthand to center an element */
+    margin: 0 auto;
+    background-color: whitesmoke;
+    color:rgb(43, 40, 38);
+}
+
+tr{
+    border-bottom: 1px solid black;
+}
+
+td{
+    padding: 10px;
+}
+
+tr:nth-child(odd){
+    background-color:rgb(170, 166, 166);
+}
+
+tr:hover{
+    color: whitesmoke;
+    background-color:rgb(43, 40, 38);
+}
+
+div{
+    margin: 0 auto;
+    width: 40%;
+    background-color: azure;
+    padding: 20px;
+    border-radius: 20px;
+    color:rgb(43, 40, 38);
+}
